@@ -229,8 +229,10 @@ public class PDFViewActivity extends AppCompatActivity implements OnPageChangeLi
         setTitle(pdfFileName);
 
         pdfView.setOnSelection(new PDFView.OnSelection() {
+
+
             @Override
-            public void onSelection(boolean hasSelection, String text) {
+            public void onSelection(boolean hasSelection) {
                 if (hasSelection) {
                     setTitle("Select Text");
                     setTitleColor(getResources().getColor(android.R.color.holo_blue_bright));
@@ -238,8 +240,9 @@ public class PDFViewActivity extends AppCompatActivity implements OnPageChangeLi
                     setTitle(pdfFileName);
                     setTitleColor(getResources().getColor(android.R.color.white));
                 }
-
             }
+
+
         });
 
     }

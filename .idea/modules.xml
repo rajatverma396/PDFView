@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/AndroidPDFViewerNew.iml" filepath="$PROJECT_DIR$/.idea/modules/AndroidPDFViewerNew.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PdfiumAndroid/AndroidPDFViewerNew.PdfiumAndroid.iml" filepath="$PROJECT_DIR$/.idea/modules/PdfiumAndroid/AndroidPDFViewerNew.PdfiumAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android-pdf-viewer/AndroidPDFViewerNew.android-pdf-viewer.iml" filepath="$PROJECT_DIR$/.idea/modules/android-pdf-viewer/AndroidPDFViewerNew.android-pdf-viewer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sample/AndroidPDFViewerNew.sample.iml" filepath="$PROJECT_DIR$/.idea/modules/sample/AndroidPDFViewerNew.sample.iml" />
     </modules>
   </component>
 </project>

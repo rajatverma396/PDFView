@@ -17,18 +17,18 @@
         android:id="@+id/pdfView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-	<com.github.barteksc.pdfviewer.PDocSelection
+	<!--<com.github.barteksc.pdfviewer.PDocSelection
 		android:id="@+id/sv"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		/>
+		/>-->
 	<LinearLayout
 		android:background="@drawable/default_scroll_handle_top"
 		android:id="@+id/search_controller"
 		android:layout_width="match_parent"
 		android:layout_height="50dp"
 		 android:gravity="center_vertical"
-		android:visibility="gone"
+		android:visibility="visible"
 		>
 
 		<android.support.v7.widget.AppCompatImageButton

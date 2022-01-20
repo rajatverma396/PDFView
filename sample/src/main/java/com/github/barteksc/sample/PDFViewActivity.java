@@ -78,8 +78,8 @@ public class PDFViewActivity extends AppCompatActivity implements OnPageChangeLi
 
     @ViewById
     PDFView pdfView;
-    @ViewById
-    PDocSelection sv;
+   /* @ViewById
+    PDocSelection sv;*/
 
     @ViewById
     LinearLayout search_controller;
@@ -219,7 +219,7 @@ public class PDFViewActivity extends AppCompatActivity implements OnPageChangeLi
 
             }
         });
-        pdfView.setSelectionPaintView(sv);
+       // pdfView.setSelectionPaintView(sv);
         pdfView.setBackgroundColor(Color.LTGRAY);
         if (uri != null) {
             displayFromUri(uri);

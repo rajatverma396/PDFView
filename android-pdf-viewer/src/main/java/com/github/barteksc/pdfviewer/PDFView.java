@@ -393,7 +393,10 @@ public class PDFView extends RelativeLayout {
 
     public PDFView(Context context, AttributeSet set) {
         super(context, set);
+        PDocSelection  pDocSelection =new PDocSelection(context,set);
+        addView(pDocSelection);
 
+        setSelectionPaintView(pDocSelection);
         renderingHandlerThread = new HandlerThread("PDF renderer");
 
         if (isInEditMode()) {

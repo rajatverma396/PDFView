@@ -86,7 +86,6 @@ public final class PDFViewActivity_
     @Override
     public void onViewChanged(HasViews hasViews) {
         this.pdfView = hasViews.internalFindViewById(R.id.pdfView);
-        this.sv = hasViews.internalFindViewById(R.id.sv);
         this.search_controller = hasViews.internalFindViewById(R.id.search_controller);
         this.prev = hasViews.internalFindViewById(R.id.prev);
         this.next = hasViews.internalFindViewById(R.id.next);

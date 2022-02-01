@@ -6,7 +6,9 @@ import android.graphics.drawable.Drawable;
 import android.os.Handler;
 import android.support.v4.content.ContextCompat;
 import android.util.TypedValue;
+import android.view.LayoutInflater;
 import android.view.MotionEvent;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -18,8 +20,8 @@ import com.github.barteksc.pdfviewer.util.Util;
 
 public class DefaultScrollHandle extends RelativeLayout implements ScrollHandle {
 
-    private final static int HANDLE_LONG = 65;
-    private final static int HANDLE_SHORT = 40;
+    private final static int HANDLE_LONG = 50;
+    private final static int HANDLE_SHORT = 50;
     private final static int DEFAULT_TEXT_SIZE = 16;
 
     private float relativeHandlerMiddle = 0f;
@@ -79,19 +81,25 @@ public class DefaultScrollHandle extends RelativeLayout implements ScrollHandle 
             }
         }
 
-        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.JELLY_BEAN) {
-            setBackgroundDrawable(background);
-        } else {
-            setBackground(background);
-        }
+       // if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.JELLY_BEAN) {
+       //     setBackgroundDrawable(background);
+       // } else {
+       //     setBackground(background);
+       // }
+        LayoutInflater  mInflater=(LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View view=mInflater.inflate(R.layout.drag_handle, null, false);
+        LayoutParams card = new LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        card.addRule(RelativeLayout.CENTER_IN_PARENT, RelativeLayout.TRUE);
+
+       // addView(view,card);
 
         LayoutParams lp = new LayoutParams(Util.getDP(context, width), Util.getDP(context, height));
-        lp.setMargins(0, 0, 0, 0);
+        lp.setMargins(0, 0, Util.getDP(context, 2), 0);
 
         LayoutParams tvlp = new LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-        tvlp.addRule(RelativeLayout.CENTER_IN_PARENT, RelativeLayout.TRUE);
+        tvlp.addRule(RelativeLayout.ALIGN_PARENT_RIGHT, RelativeLayout.TRUE);
 
-        addView(textView, tvlp);
+        addView(view, tvlp);
 
         lp.addRule(align);
         pdfView.addView(this, lp);

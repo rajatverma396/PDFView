@@ -4,16 +4,22 @@
     android:orientation="vertical"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:elevation="8dp"
-    android:background="@drawable/default_scroll_handle_bottom"
-   >
-    <ImageView
-        android:layout_width="25dp"
-        android:layout_height="45dp"
-        android:padding="4dp"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_margin="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
 
-        android:src="@drawable/ic__8893109461577436997"
-        >
+        app:cardElevation="8dp"
+        app:cardCornerRadius="20dp">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="45dp"
+            android:padding="4dp"
 
-    </ImageView>
+            android:src="@drawable/ic__8893109461577436997"
+            >
+
+        </ImageView>
+    </androidx.cardview.widget.CardView>
 </RelativeLayout>

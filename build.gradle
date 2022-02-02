@@ -13,7 +13,25 @@ buildscript {
 plugins {
     id 'maven-publish'
 }
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            artifactId = 'common'
 
+
+            pom {
+                name = ' common files'
+                description = ' common files'
+                licenses {
+                    license {
+                        name = 'The Apache License, Version 2.0'
+                        url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+
+            }
+        }
+    }}
 allprojects {
     repositories {
         google()

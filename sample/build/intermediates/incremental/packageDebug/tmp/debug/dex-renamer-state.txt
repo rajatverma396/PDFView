@@ -1,4 +1,0 @@
-#Thu Jan 20 23:07:46 IST 2022
-base.0=/Users/rajatverma/StudioProjects/PDFView/sample/build/intermediates/dex/debug/mergeDexDebug/out
-path.0=classes.dex
-renamed.0=classes.dex

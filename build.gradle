@@ -14,17 +14,6 @@ plugins {
     id 'maven-publish'
 }
 
-publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            groupId = 'foo'
-            artifactId = 'bar'
-            version = '0.12'
-
-
-        }
-    }
-}
 allprojects {
     repositories {
         google()

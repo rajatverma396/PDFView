@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="android-pdf-viewer/src/main/res/drawable/default_scroll_handle_bottom.xml" value="0.21666666666666667" />
+        <entry key="android-pdf-viewer/src/main/res/drawable/default_scroll_handle_top.xml" value="0.21666666666666667" />
         <entry key="android-pdf-viewer/src/main/res/drawable/ic__8893109461577436997.xml" value="0.21666666666666667" />
         <entry key="android-pdf-viewer/src/main/res/layout/drag_handle.xml" value="0.5" />
       </map>

@@ -13,12 +13,13 @@ buildscript {
 plugins {
     id 'maven-publish'
 }
+
 publishing {
     publications {
         mavenJava(MavenPublication) {
-            artifactId = 'common'
-
-
+            groupId = 'foo'
+            artifactId = 'bar'
+            version = '0.15'
             pom {
                 name = ' common files'
                 description = ' common files'
@@ -30,8 +31,10 @@ publishing {
                 }
 
             }
+
         }
-    }}
+    }
+}
 allprojects {
     repositories {
         google()
